@@ -1,14 +1,14 @@
-import "./item.css";
+import itemstyle from "./item.module.css";
 
-export default function Item({ item }) {
+export default function Item({ itemstyle }) {
   return (
     <div className="container">
-      <h3 className="title">{item.title}</h3>
-      <img src={item.image} alt={item.title} className="image" />
+      <h3 className="title">{itemstyle.title}</h3>
+      <img src={itemstyle.image} alt={itemstyle.title} className="image" />
       <p>
-        <strong className="price">${item.price}</strong>
+        <strong className="price">${itemstyle.price}</strong>
       </p>
-      <p>{item.description}</p>
+      <p>{itemstyle.description}</p>
     </div>
   );
 }
